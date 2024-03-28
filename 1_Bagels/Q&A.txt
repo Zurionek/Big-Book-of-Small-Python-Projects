@@ -1,0 +1,23 @@
+1)What happens when you change the NUM_DIGITS constant ?
+A:SecretNum generated will be longer.
+
+2)What happens when you change the MAX_GUESSES constant ?
+A:User will have more/less chances to guess.
+
+3)What happens if you set NUM_DIGITS to a number larger than 10 ?
+A:Error: IndexError: list index out of range -> list of digits has 10 digits
+
+4)What happens if you replace secretNum = getSecretNum() on line 30 with secretNum = '123' ?
+A:Program works as expected with hardcoded secretNum value set for '123'
+
+5)What error message do you get if you delete or comment out numGuesses = 1 ?
+A:UnboundLocalError: local variable 'numGuesses' referenced before assignment
+
+6)What happens if you delete or comment out random.shuffle(numbers) ?
+A:The SecretNum will be always the same - first 3 digits of 0123456789
+
+7)What happens if you delete or comment out if guess == secretNum and return 'You got it' ?
+A:Even user gave correct answer - game is still on and is giving clues - for correct answer "Fermi Fermi Fermi"
+
+8)What happens if you comment out numGuesses += 1 on line 44 ?
+A:There will be infinite guess#1 without increment
