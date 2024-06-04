@@ -1,0 +1,27 @@
+1)How are birthdays represented in this program?
+A:In format: Mar 16.
+We achieve this by "birthday = start_of_year + random_number_of_days",
+where start_of_year = datetime.date(2001, 1, 1) and birthday = start_of_year + random_number_of_days
+and:
+monthName = MONTHS[birthday.month-1]
+dateText = '{} {}'.format(monthName, birthday.day)
+
+2)How could you remove the maximum limit of 100 birthdays the program generates?
+A:By changing this line of code:
+"if response.isdecimal() and (0 < int(response) <= 100):"
+
+3)What error message do you get if you delete or comment out numBDays = int(response) ?
+A:
+Traceback (most recent call last):
+File "C:\Users\Acer\Desktop\Big Book of Small Python Projects\2_Birthday_Paradox\main.py", line 56, in <module>
+print(f"Here are {numBDays} birthdays:")
+NameError: name 'numBDays' is not defined
+
+4)How can you make the program display full month names, such as 'January' instead of 'Jan' ?
+A:By changing months names in tuple to full month names:
+MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+
+5)How could you make 'X simulations run...' appear every 1000 simulations instead of every 10000 ?
+A:By Changing this line of code:
+"if i % 10_000 == 0 and i != 0:
+    print(i, 'simulations run...')"
