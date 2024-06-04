@@ -1,0 +1,12 @@
+1)What happens if the player enters a blank string for the message ?
+A:There is no output - if string is empty then this code is executed: sys.exit()
+
+2)Does it matter what the nonspace characters are in the bitmap variable's string ?
+A:It can be anything. The only difference is whether it's character or space.
+
+3)What does the variable i created on line 45 represents ?
+A:In this case 'i' means any nonspace character in bit map string.
+
+4)What bug happens if you delete or comment out print() on line 48?
+A:The output will be provided in one line.
+
