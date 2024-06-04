@@ -1,0 +1,71 @@
+(0)Initial values description:
+->import random and sys
+->create constant variables i.e card's color graphics in ASCII
+
+1)def main
+->Introduction to game and presenting the rules
+->Starting money given i.e 5000
+->While True loop as a main loop of the game
+->Check whether player still has some money to play
+->bet = getBet(money)
+->Give the dealer and player two cards from the deck each
+->Deck is imported and cards are popped
+->Then handle player actions:
+*Cards are displayed (and one of dealer's card is hidden)
+*Check whether player has busted - if hand value > 21 -> break
+*Get the player move, either H, S or D
+*If D - Player is doubling down, they can increase their bet - stake is doubled
+*If move in H or D - player gets another card from the deck
+*Check whether player has busted after taking another card
+*if move in ("S", "D") - Stand/doubling down stops the player's turn - break
+->Then handle dealer's actions:
+*If dealer is not busted (hand value < 21) and hand value < 17 - dealer hits
+*Another card is added to dealer's hand
+*Check whether dealer has busted after taking another card
+*Press enter to continue
+->Show the final hands - with all cards unhidden
+->Calculate values for each hand
+->Compare values and see who wins
+->Press enter to continue
+
+
+(2)def getBet(maxBet) description:
+->Asking the player how much they want to bet for this round
+->User can choose between 1 and maxbet which is equal to whole depo
+->The strip() method removes any leading, and trailing whitespaces
+->If user provides QUIT -> sys.exit()
+->If bet is not a decimal - ask again (keep asking)
+->Bet should be integer
+->Bet should be between 1 and max value
+->Function returns bet
+
+(3)def getDeck() description:
+->Build a cards deck as a list
+->Iterate through cards colors and cards faces and build whole deck of 52 cards as a tuples
+->Shuffle the deck using random function
+->Function returns deck - shuffled list of 52 cards
+
+(4)def displayHands(playerHand, dealerHand, showDealerHand) description:
+->Show the player's and dealer's cards. Hide the dealer's first card if showDealerHand is False
+->Presents value and cards of dealer if showDealerHand
+->If not showDealerHand - display first card hidden and second card unhidden
+->At the end presents value and cards of player
+
+(5)def getHandValue(cards) description:
+->Returns the value of the cards. Face cards are worth 10, aces
+are worth 11 or 1 (this function picks the most suitable ace value)
+->Iterates through cards in function and check [0] - rank of card
+->If Ace - add 1 to number of aces
+->If face card - add 10 to general value, if value card - add value of card to general value
+->Function returns value of hand
+
+(6)def displayCards(cards) description:
+->Display all the cards in the cards list
+->Present cards in graphical forms and prints them
+
+(7)def getMove(playerHand, money):
+->Ask the player for their move, and returns 'H' for hit, 'S'
+for stand, and 'D' for double down
+->Player can hit or stand or double down (only if this is the first move and cash>0)
+->Return move - H, S or D depends on what move player chose
+

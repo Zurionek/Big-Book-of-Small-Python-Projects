@@ -1,0 +1,23 @@
+(1)How can you make the player start with a different amount of money?
+A:By changing money variable
+
+(2)How does the program prevent the player from betting more money than they have?
+A:By this line of code: "if 1 <= bet <= maxBet" - where maxBet is equal to the max money player has
+
+(3)How does the program represent a single card?
+(4)How does the program represent a hand of cards ?
+A:Deck of cards is created as a list of cards with: rank + suite
+One single card is a tuple: (rank + suite)
+Hand of cards is a list of cards
+
+(5)What do each of the strings in the "rows" list represent?
+A:Each string is an element of the graphical presentation of the card
+
+(6)What happens if you delete or comment out random.shuffle(deck)?
+A:Each game the same cards will be picked for player and for dealer
+
+(7)What happens if you change money-=bet to money += bet?
+A:Even if player lost the game, money will be added to his account
+
+(8)What happens when showDealerHand in the displayHands() function is set to True ? / What if False ?
+A:If True, the first card view is hidden (hidden graphic is displayed), if False, cards are visible.
