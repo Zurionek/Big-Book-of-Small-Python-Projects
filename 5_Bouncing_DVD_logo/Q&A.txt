@@ -1,0 +1,13 @@
+(1)What happens if you change WIDTH, HEIGHT = bext.size() to WIDTH, HEIGHT = 10, 5 ?
+A:Window to display is getting too small.
+
+(2)What happens if you replace DIR: random.choice(DIRECTIONS) with DIR: DOWN_RIGHT
+A:All "DVD" objects will go at first to the same direction - DOWN_RIGHT
+
+(3)How can you make the "Corner bounces" text not appear on the screen ?
+A:We can create variable and still count corner bounces but without displaying the value on the screen.
+We can remove printing for this variable.
+
+(4)What error message do you get if you delete or comment out corner-Bounces = 0?
+A:print("Corner bounces:", cornerBounces, end='')
+UnboundLocalError: local variable 'cornerBounces' referenced before assignment
