@@ -1,0 +1,17 @@
+1)How can you make the calendar display abbreviated months? For example "Jan" instead of "January"?
+A:We can create set of MONTHS as abbreviations i.e MONTHS = ("Jan","Feb", [...],"Dec)
+
+2)What error message do you get if you delete or comment out year = int(response)?
+A:NameError: name 'year' is not defined
+
+3)How can you make the calendar not display the days of the week at the top?
+A:Disable this chunk of code:
+#Add the days of the week labels to the calendar:
+calText += "...Sunday.....Monday....Tuesday....Wednesday..Thursday....Friday....Saturday..\n"
+
+4)How can you make the program not save the calendar to file?
+A:Disable code chunk after line:
+#Save the calendar to a text file:
+
+5)What happens if you delete or comment out "print(calText)" ?
+A:Calendar will be created and added to the file but not printed within python interpreter
