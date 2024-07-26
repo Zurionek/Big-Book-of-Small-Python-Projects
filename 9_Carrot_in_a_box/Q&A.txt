@@ -1,0 +1,12 @@
+1)What would happen if p1Name[:11] and p2Name[:11] would be longer than 11 characters?
+A:Names will be cut to maximum 11 characters.
+
+2)What would happen if you omit the space at the end of firstBox = "Red " (line 108)?
+A:Nothing really happens (maybe a slight movement of boxes ASCII).
+
+3)What would happen if you delete or comment out print("\n" * 100) (line 85)?
+A:There will be no spaces printed, hence no screen "refresh".
+
+4)What would happen if you delete or comment out the "else:" and "break" (lines 105/106) ?
+A:Then line "print(p2Name + ", please enter 'YES' or 'NO'.")" would wait forever for
+the answer YES or NO.
