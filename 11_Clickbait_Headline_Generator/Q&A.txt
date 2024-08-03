@@ -1,0 +1,8 @@
+1)What error message do you get if you delete or comment out numberOfHeadlines = int(response)?
+A:NameError: name 'numberOfHeadlines' is not defined
+
+2)What error message do you get if you change int(response) to response?
+A:TypeError: 'str' object cannot be interpreted as an integer
+
+3)What error message do you get if you change line 17 to WHEN = []?
+A:IndexError: list index out of range
