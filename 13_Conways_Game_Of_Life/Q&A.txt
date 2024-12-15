@@ -1,0 +1,11 @@
+1)What happen when you change WIDTH = 79 to WIDTH = 7?
+A:The board will be smaller and have size 7x20.
+
+2)What happens if you delete or comment out print('\n' * 50)?
+A:Results will be printed each 1second directly underneath each other.
+
+3)What happens if you change random.randint(0,1) to random.randint(0,10)?
+A:50/50 ration of giving Alive cells will decrease to 10% only.
+
+4)What happens if you change nextCells[(x,y)] = DEAD to nextCells[(x,y)] = ALIVE?
+A:All cells would become Alive
