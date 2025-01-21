@@ -1,0 +1,18 @@
+1)Q:What happens if you change (' ' * gapWidth) to ('.' * gapWidth)?
+A:The cave will be marked with '.' instead of ' '
+
+2)Q:What happens if you change random.randint(1, 6) to random.randint(1, 1)?
+A:Cave will be moved max to the left and then will be constantly one 'brick' to the left.
+
+3)Q:What happens if you change random.randint(1, 6) to random.randint(2, 2)?
+A:Cave will be moved max to the right and then will be constantly one 'brick' to the left.
+
+4)Q:What error message do you get if you delete or comment out leftWidth = 20?
+A:NameError: name 'leftWidth' is not defined
+
+5)Q:What happens if you change WIDTH = 70 to WIDTH = -70?
+A:There will be no '#' generated at all.
+
+6)What error message do you get if you change PAUSE_AMOUNT = 0.05 on line 11 to PAUSE_AMOUNT = -0.05?
+A:ValueError: sleep length must be non-negative
+
