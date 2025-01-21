@@ -1,0 +1,12 @@
+1)Q:What happens when you change print("\\") to print("@")?
+A:It will break printing of diamonds as no escape character and no closing "\"
+
+2)Q:What happens when you change print(" " * (i*2)) to
+print("@" * (i * 2))?
+A:Space out of diamond will be replaced by "@"
+
+3)Q:What happens when you change range(0,6) to range(0,30)?
+A:The range of printed diamonds will be increased. Now the biggest one will have 60 width.
+
+4)Q:What happens when you delete or comment out "for i in range(size)"
+A:NameError: name 'i' is not defined.
