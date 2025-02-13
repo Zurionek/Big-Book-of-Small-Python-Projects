@@ -1,0 +1,13 @@
+1)Q:What happens if you change ALL_DICE = [D1]
+A:There will be only die D1 to be chosen. So there will be always die with 1 "dot" and the only difference will be,
+how many of them will be shown.
+
+2)Q:What happens if you change get((cx,cy), " ") to get((cx,cy), ".")?
+A:The table will be dotted instead of being plain between dices.
+
+3)Q:What happens if you change correctAnswers += 1 to +=0?
+A:None of correct answers will be summed up and hence no positive result of the game.
+
+4)Q:What error message do you get if you delete or comment out correctAnswers = 0?
+A:If correct answer is being given, then the error says:
+NameError: name 'correctAnswers' is not defined.
