@@ -1,0 +1,13 @@
+1.Q:What happens if you delete or comment out rolls.append(rollResult)?
+A:The final result will always show 0.
+
+2.Q:What happens if you change rolls.append(rollResult) to rolls.append(-rollResult)?
+A:The final result will be presented as a negative value.
+
+3.Q:What happens if you delete or comment out (', '.join(rolls), end='')?
+A:Program will return the total but without presenting each die separately.
+
+4.Q:What happens if instead of a dice roll you enter nothing?
+A:Warning message is presented:
+"Invalid input. Enter something like '3d6' or '1d10+2'.
+Input was invalid because: Missing the 'd' character"
