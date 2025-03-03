@@ -1,0 +1,16 @@
+1)Q:What happens if you change print('',end='') to print('.',end='')?
+A:The empty spaces in the output will be replaced with dots.
+
+2)Q:What error message do you get if you change PAUSE = 0.1 to PAUSE = -0.1?
+A:ValueError: sleep length must be non-negative
+
+3)Q:What happens if you change columns[i] > 0 to columns[i] < 0?
+A:Only empty spaces will be printed and no values.
+This is because columns[i] can be equal to 0 or assign to between 6 and 14.
+
+4)Q:What happens if you change columns[i] > 0 to columns[i] <= 0?
+A:1s and 0s will be printed in all possible columns and no empty spaces will be printed.
+
+5)Q:What happens if change columns[i] -= 1 to columns[i] += 1?
+A:Column will increase the amount of 1s and 0s printed till the point where
+all the columns fill be filled with values and length of column increased constantly.
