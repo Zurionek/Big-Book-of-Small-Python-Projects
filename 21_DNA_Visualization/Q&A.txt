@@ -1,0 +1,8 @@
+1)Q:What happens if you change rowIndex += 1 to += 2?
+A:Program will print every two pieces of DNA
+
+2)Q:What happens if you change random.randint(1,4) to (1,2)?
+A:We will choose only between 2 options of nucleotide pairs, not 4.
+
+3)Q:What error message do you get if you set PAUSE = 0.15 to -0.15?
+A:ValueError: sleep length must be non-negative
