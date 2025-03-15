@@ -1,0 +1,11 @@
+1)Q:What happens if you change random.choice([LEFT,RIGHT]) to random.choice([LEFT])?
+A:There will be only left-oriented ducks printed.
+
+2)Q:What happens if you change self.partToDisplayNext = BODY
+A:Only heads of ducks will be printed.
+
+3)Q:What happens if you change self.partToDisplayNext = FEET to self.partToDisplayNext = BODY?
+A:Ducks printed will have infinite body.
+
+4)Q:What happens if you change return self.getHeadStr() to return self.getFeetStr()?
+A:There will be no head printed. Instead feet will be printed in place of heads.
