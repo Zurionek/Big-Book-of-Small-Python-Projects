@@ -1,0 +1,10 @@
+1)Q:What happens if you change response = input("> ").upper on line 101 to response = input("> ")?
+A:Moves can be omit if provided in normal letters, not capitalized. Program works only on capitalized letters.
+2)Q:What happens if you change canvasStr += "#" to canvasStr += "@"?
+A:Ending character will be changed from # to @.
+3)What happens if you change canvasStr += " " to canvasStr += "."?
+A:All empty cells will be filled wit "." instead of empty cell.
+4)What happens if you change moves =[] to moves = list('SDWDDSASDSAAWASSDSAS')?
+A:List of moves that user will be provided will be started with SDWDDSASDSAAWASSDSAS.
+Those moves won't be printed on the screen as a picture but if we save the file,
+those moves will be printed as if they were used at the top of the newly created file.
