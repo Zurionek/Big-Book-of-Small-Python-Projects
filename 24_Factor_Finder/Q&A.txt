@@ -1,0 +1,19 @@
+1)Q:What happens if you delete or comment out factors.append(i)?
+A:We will miss some of the factors that should be added.
+
+2)Q:What happens if you delete or comment out factors = list(set(factors))?
+A:Duplicated values will be included in the factors list.
+It is valid for numbers which math.sqrt() is valid int like 25, 36, 49.
+
+3)Q:What happens if you delete or comment out factors.sort()?
+A:Factors values won't be sorted from the lowest to the highest.
+
+4)Q:What error message do you get if you change factors = [] to factors = ''?
+A:AttributeError: 'str' object has no attribute 'append'.
+
+5)Q:What happens if you change factors = [] to factors = [-42]?
+A:-42 will be added to the factors list as a constant value.
+
+6)Q:What error message do you get if you change factors = [] to factors =['hello']?
+A:TypeError: '<' not supported between instances of 'str' and 'int'.
+Sorting is not possible if one of the value in the list is of string type.
