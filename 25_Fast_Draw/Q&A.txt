@@ -1,0 +1,13 @@
+1)Q:What happens if you change drawTime = time.time() to drawTime = 0?
+A:Then our reaction will be set as a time.time() which is about 1745540889 seconds.
+So time since January 1, 1970, 00:00:00 (UTC).
+
+2)Q:What happens if you change timeElapsed > 0.3 to timeElapsed < 0.3?
+A:Then, even we are fast enough and press Enter in range of 0.3 sec, we will lose.
+
+3)Q:What happens if you change time.time() - drawTime to time.time() + drawTime?
+A:TimeElapsed will be extremely high as we will add drawTime to time.time() which is amount
+of seconds since January 1, 1970, 00:00:00 (UTC).
+
+4)Q:What happens if you delete or comment out input("Press Enter to begin...")?
+A:Game won't need an Enter press to begin. It will begin automatically with "It's high noon"
